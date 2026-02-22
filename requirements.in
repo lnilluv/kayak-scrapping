@@ -1,0 +1,10 @@
+boto3
+beautifulsoup4
+numpy
+pandas
+plotly
+psycopg2-binary
+requests
+scrapy
+scrapy-user-agents
+sqlalchemy

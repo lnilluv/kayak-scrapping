@@ -1,0 +1,10 @@
+boto3==1.40.33
+beautifulsoup4==4.13.5
+numpy==2.3.3
+pandas==2.3.2
+plotly==6.3.1
+psycopg2-binary==2.9.10
+requests==2.32.5
+scrapy==2.14.1
+scrapy-user-agents==0.1.1
+sqlalchemy==2.0.43

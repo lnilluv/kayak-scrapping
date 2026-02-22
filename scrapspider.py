@@ -1,18 +1,19 @@
-# Import scrapy and scrapy.crawler
 import json
-import logging
 import os
+from pathlib import Path
 
-import requests
 import scrapy
-from scrapy.crawler import CrawlerProcess
 
 
 class BookingSpider(scrapy.Spider):
-    with open(
-        "/Users/pryda/Documents/Projets_Jedha/1_Kayak/cities_weather.json", "r"
-    ) as f:
-        cities = json.load(f)
+    default_cities_file = Path(__file__).resolve().parent / "cities_weather.json"
+    cities_file = Path(os.getenv("CITIES_WEATHER_PATH", str(default_cities_file)))
+    with cities_file.open("r", encoding="utf-8") as f:
+        city_payload = json.load(f)
+    if isinstance(city_payload, dict):
+        cities = list(city_payload.keys())
+    else:
+        cities = [city for city in city_payload]
     cities = [city for city in cities]
     # cities = ["Paris"]
     name = "spider"

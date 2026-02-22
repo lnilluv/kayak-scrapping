@@ -45,5 +45,25 @@ Based on this data, two maps should be delivered :
 1. **scrapspider.py** scrappy spider to scrap booking.com (scrappy config is inside Scrapping folder)
 2. **main_v3.ipynb** main project file where weather API data is collected, S3 storing and Amazon RDS data uploads
 
+## Production usage
+
+`main_v3.ipynb` is kept as a legacy reference notebook for portfolio review.
+For reproducible execution (local and VPS), use the production entrypoint:
+
+```bash
+python -m src.main --smoke
+```
+
+Environment variables:
+- `CITIES_WEATHER_PATH` (optional): input cities weather json path (default `cities_weather.json`)
+- `HOTELS_OUTPUT_PATH` (optional): output hotels json path (default `hotels.json`)
+- `OPENWEATHER_API_KEY` (required only by notebook weather API sections)
+
+Docker smoke run:
+
+```bash
+docker build -t booking-scrapping:prod .
+docker run --rm booking-scrapping:prod
+```
 
 

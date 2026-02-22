@@ -102,6 +102,8 @@ celerybeat-schedule
 
 # Environments
 .env
+.env.*
+.secrets.*
 .venv
 env/
 venv/
@@ -123,3 +125,8 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+
+# Local security notes/checklists (do not commit)
+security-notes/
+security-checklist.local.md
+audit-local/
