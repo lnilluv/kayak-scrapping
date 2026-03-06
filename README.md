@@ -2,14 +2,6 @@
 
 ![Kayak](https://seekvectorlogo.com/wp-content/uploads/2018/01/kayak-vector-logo.png)
 
-## Video presentation
-
-[Kayak - Video presentation](https://youtu.be/5sb0OxU1ixE)
-
-## Contact
-
-You can contact me at **laurent.nilluv@gmail.com**
-
 ## Context 
 
 <a href="https://www.kayak.com" target="_blank">Kayak</a> is a travel search engine that helps user plan their next trip at the best price.
